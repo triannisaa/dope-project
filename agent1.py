@@ -19,11 +19,6 @@ from langchain.schema import BaseOutputParser
 from langchain.chains import LLMChain
 from langchain.callbacks import get_openai_callback
 
-# # Load JSON file to contextual guardrail from GitHub (raw link)
-# url = "https://raw.githubusercontent.com/triannisaa/dope-project/main/context-darmahenwa.json"
-# response = requests.get(url).json()
-# content_context = pd.DataFrame(response).content.tolist()
-
 class QueryType(Enum):
     CONTEXTUAL = "context"
     DATABASE = "database"
@@ -453,7 +448,7 @@ def main():
     print("╚══════════════════════════════════════════════════════════════╝")
     
     # Setup API Key
-    api_key = "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"
+    api_key = "masukkan_api_key_disini"
     if not api_key:
         print("❌ Tidak dapat melanjutkan tanpa API Key")
         return
